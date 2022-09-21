@@ -26,10 +26,19 @@ class Punto():
 
         return cuadrante
 
-    def vector(self, punto2):
-        vector = (self.name+punto2.name,(punto2.x1-self.x1),(punto2.y1-self.y1))
+    def get_name(self):
+        return self.name
+    def get_x1(self):
+        return self.x1
+    def get_y1(self):
+        return self.y1
+
+
+    def vector(self,punto2): 
+        vector = (self.name+ punto2.get_name(),(punto2.get_x1()-self.x1),(punto2.get_y1()-self.y1))
         return vector
-        
+    
+
         
             
 
