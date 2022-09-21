@@ -25,6 +25,10 @@ class Punto():
             cuadrante = 4
 
         return cuadrante
+
+    def vector(self, punto2):
+        vector = (self.name+punto2.name,(punto2.x1-self.x1),(punto2.y1-self.y1))
+        return vector
         
         
             
